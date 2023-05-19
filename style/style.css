@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* 101026 - azul header 
+0088d2 - azul hover 
+171737 - azul menu2 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: #101026;
+    padding: 2em 6em;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;  
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #0088d2;
+}
+
+.hamburguer {
+    display: none;
+}
+
+.menu {
+    background-color: #171737;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .navbar .nav-menu {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .botaoHamburguer {
+        border: none;
+        background: transparent;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0;
+        padding: 2em 6em;
+    }
+
+    .menu .nav-menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        padding: 2em 0;
+    }
+
+    .block {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+
+    header {
+        padding: 2em 4em;
+    }
+
+}
+
+
+
